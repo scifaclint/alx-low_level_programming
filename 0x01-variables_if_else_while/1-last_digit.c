@@ -1,29 +1,29 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /**
- *  * main - print the last digit of the number stored in the variable n
- *   * Description: using the main function
- *    * this program prints "Last digit is gt 5, is zero, or is lt 6 and not 0"
- *     * Return: 0
+ * main - Entry point
+ * Description: checks on the last digit of the assigned var
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int n;
-	int l;
+	int n, m;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	l = n % 10;
-		if (l > 5)
-										{
-														printf("Last digit of %d is %d and is greater than 5\n", n, l);
-															}
-		else if (l == 0)
-												{
-														printf("Last digit of %d is %d and is 0\n", n, l);
-																	}										else
-														{
-														printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l);
-																			}
-													return (0);
+	m = n % 10;
+	if (m > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n", n, m);
+	}
+	else if (m < 6 && m != 0)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, m);
+	}
+	else
+	{
+		printf("Last digit of %d is %d and is 0\n", n, m);
+	}
+	return (0);
 }
