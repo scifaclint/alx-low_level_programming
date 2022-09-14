@@ -1,18 +1,19 @@
-#include "main.h"
-/**
- *main - function prints text as output
- *
- *Return:return 0
- */
-int main(void)
-{
-	char school[10] = "_putchar";
-	int i;
-
-	for (i = 0; i < 8; i++)
-	{
-		_putchar(school[i]);
-	}
-	_putchar(10);
-	return (0);
-}
+#include "main.h" 
+ /** 
+  * main - Prints _putchar as a message. 
+  * 
+  * Return: Always 0 (Success) 
+  */ 
+ int main(void) 
+ { 
+         int str[] = {95, 112, 117, 116, 99, 104, 97, 114}; 
+         int count, sz; 
+  
+         sz = sizeof(str) / sizeof(int); 
+         for (count = 0; count < sz; count++) 
+         { 
+                 _putchar(str[count]); 
+         } 
+         _putchar('\n'); 
+         return (0); 
+ }
