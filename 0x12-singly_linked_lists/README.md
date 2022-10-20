@@ -1,1 +1,1 @@
-0x12. C - Singly linked lists
+Linked list and data structures and some algors
